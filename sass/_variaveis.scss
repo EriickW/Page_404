@@ -1,0 +1,9 @@
+// Variaveis==================
+$corParag:#4F4F4F;
+$corTitulo:#333333;
+$corBotao:#333333;
+
+
+@mixin fonteTexto() {
+  font-family:'Space Mono', monospace;
+}

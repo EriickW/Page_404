@@ -1,0 +1,34 @@
+
+
+@media (max-width:1000px){
+  main{
+
+    height: 90rem;
+    flex-direction: column;
+    margin-inline: auto;
+    h1{
+      font-size: 3.8rem;  
+      margin-bottom: 3.6rem;
+      width: 33rem;
+    }
+    p{
+    
+    font-size: 1.8rem;
+    width: 32rem;
+    height: 8rem;
+ 
+    }
+    button{
+    @include fonteTexto();
+    font-size: 1.4rem;
+    color:white;
+    width: 21.6rem;
+    height: 6.8rem;
+   
+    }
+    img{
+      width: 40rem;
+      height: 35rem;
+    }
+  }
+}
