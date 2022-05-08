@@ -12,6 +12,7 @@
 body{
   width: 100%;
   height: 100vh;
+  margin: 0 auto;
 }
 header{
  width: 100%;
@@ -28,11 +29,35 @@ header{
 }
 main{
 
-  height: 60rem;
+  min-height: 60rem;
+  max-width: 120rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 5rem;
+  margin: 0 auto;
+
+  .box{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+      
+    }
+    .texto{
+      background: #000;
+      min-width:30rem ;
+      margin-inline: auto;
+      flex: 2 1 16rem;
+    
+    }
+    img{
+      max-width: 100%;
+      display: block;
+    width: 50rem;
+    height: 45rem;
+    flex: 0 1 35rem
+   
+  }
   h1{
     @include fonteTexto();
     font-size: 6.4rem;
@@ -64,14 +89,8 @@ main{
   border: none;
   cursor: pointer;
   }
-  img{
-    width: 50rem;
-    height: 45rem;
-  }
-  .box{
-    width: 50%;
-   
-  }
+  
+ 
  
 }
 @import 'responssive';

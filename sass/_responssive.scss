@@ -1,15 +1,14 @@
 
 
-@media (max-width:1000px){
+@media (max-width:900px){
   main{
-
-    height: 90rem;
-    flex-direction: column;
-    margin-inline: auto;
+    margin-top: 5rem;
+    
     h1{
       font-size: 3.8rem;  
       margin-bottom: 3.6rem;
       width: 33rem;
+      line-height: 6.5rem;
     }
     p{
     
@@ -30,5 +29,11 @@
       width: 40rem;
       height: 35rem;
     }
+  }
+  .texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 }

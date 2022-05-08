@@ -12,6 +12,7 @@
 body {
   width: 100%;
   height: 100vh;
+  margin: 0 auto;
 }
 
 header {
@@ -29,17 +30,45 @@ header h3 {
 }
 
 main {
-  height: 60rem;
+  min-height: 60rem;
+  max-width: 120rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 0 auto;
+}
+
+main .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .texto {
+  background: #000;
+  min-width: 30rem;
+  margin-inline: auto;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 16rem;
+          flex: 2 1 16rem;
+}
+
+main img {
+  max-width: 100%;
+  display: block;
+  width: 50rem;
+  height: 45rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 35rem;
+          flex: 0 1 35rem;
 }
 
 main h1 {
@@ -76,28 +105,15 @@ main button {
   cursor: pointer;
 }
 
-main img {
-  width: 50rem;
-  height: 45rem;
-}
-
-main .box {
-  width: 50%;
-}
-
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   main {
-    height: 90rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-inline: auto;
+    margin-top: 5rem;
   }
   main h1 {
     font-size: 3.8rem;
     margin-bottom: 3.6rem;
     width: 33rem;
+    line-height: 6.5rem;
   }
   main p {
     font-size: 1.8rem;
@@ -114,6 +130,21 @@ main .box {
   main img {
     width: 40rem;
     height: 35rem;
+  }
+  .texto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=main.css.map */
