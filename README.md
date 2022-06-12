@@ -13,4 +13,4 @@
 
 <br>
 
-<img src="img/404.png">
+<img src="404.png">
